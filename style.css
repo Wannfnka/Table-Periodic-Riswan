@@ -1,0 +1,233 @@
+*{
+  padding:0;
+  margin:0;
+}
+h3{
+  text-align: center;
+  margin-top:1rem;    
+}
+.card{
+  text-align:center;
+  border:none;
+  box-shadow: 10px 10px 14px -3px rgba(0,0,0,0.47);
+  width:4rem;
+  color:#ddeedd;
+  margin:1px;
+  overflow: hidden;
+  font-size:0.65rem;
+}
+
+.card:hover{
+  cursor: pointer;
+  background: rgb(152,152,152);
+  background: linear-gradient(90deg, rgba(152,152,152,1) 19%, rgba(73,72,72,1) 66%);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding-top:0.5rem;
+}
+.leftSide{
+  align-content: flex-start;
+}
+.rowOne, .rowTwo, .rowThree, .rowFour, .rowFive, .rowSix, .rowSeven{
+  display: flex;
+  justify-content: flex-end;
+}
+.rightSide{
+  align-content: right;
+  justify-content:flex-end;
+}
+
+.footerTop{
+  display: flex;
+  justify-content: center;
+  margin-top:2rem;
+}
+.footerBottom{
+  display: flex;
+  justify-content: center;
+}
+.secondRow{
+  display:flex;
+}
+
+.thirdRow{
+  display:flex;
+}
+
+.fourthRow{
+  display:flex;
+}
+
+.fifthRow{
+  display:flex;
+}
+
+.sixthRow{
+  display:flex;
+}
+
+.seventhRow{
+  display:flex;
+}
+.cardHead{
+  text-align: left;
+}
+
+
+
+.nonMetal{
+  background: rgb(22,208,53);
+  background: linear-gradient(90deg, rgba(22,208,53,1) 0%, rgba(5,140,5,1) 35%);
+}
+
+.alkali{
+  background: rgb(235,187,113);
+  background: linear-gradient(90deg, rgba(235,187,113,1) 0%, rgba(240,150,9,1) 35%);
+}
+
+.alkaline{
+  background: rgb(175,146,88);
+  background: linear-gradient(90deg, rgba(175,146,88,1) 0%, rgba(148,99,1,1) 35%);
+}
+
+.transition{
+  background: rgb(230,166,200);
+  background: linear-gradient(90deg, rgba(230,166,200,1) 0%, rgba(223,114,172,1) 35%);
+}
+
+.lanthanoid{
+  background: rgb(217,100,166);
+  background: linear-gradient(90deg, rgba(217,100,166,1) 0%, rgba(237,23,144,1) 35%);
+}
+
+.actinoid{
+  background: rgb(212,105,108);
+  background: linear-gradient(90deg, rgba(212,105,108,1) 0%, rgba(229,30,37,1) 35%);
+}
+
+.poor{
+  background: rgb(73,157,195);
+  background: linear-gradient(90deg, rgba(73,157,195,1) 0%, rgba(31,112,149,1) 35%);
+}
+
+.metalloid{
+  background: rgb(59,227,224);
+  background: linear-gradient(90deg, rgba(59,227,224,1) 0%, rgba(22,171,168,1) 35%);background-color:#16aba8;
+}
+
+.halogen{
+  background: rgb(181,218,129);
+  background: linear-gradient(90deg, rgba(181,218,129,1) 0%, rgba(138,192,63,1) 35%);
+}
+
+.nobleGas{
+  background: rgb(170,127,204);
+  background: linear-gradient(90deg, rgba(170,127,204,1) 0%, rgba(126,81,161,1) 35%);
+}
+
+.unknown{
+  background: rgb(168,163,163);
+  background: linear-gradient(90deg, rgba(168,163,163,1) 0%, rgba(118,118,118,1) 35%);
+}
+
+ul{
+  display:grid;
+  grid-template-columns: repeat(11, 1fr);
+  padding:1rem;
+}
+
+li{
+  list-style-type: none;
+  text-align: center;
+  color:lightgray;
+}
+
+:root {
+  --modal-duration: 1s;
+  --modal-color: #505342;
+}
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: var(--modal-color);
+  padding: 15px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-footer {
+  background: var(--modal-color);
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.legend{
+    text-align: center;
+}
+
+body{
+    background-color:lightgray;
+}
